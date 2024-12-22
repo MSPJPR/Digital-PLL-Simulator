@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital PLL Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Digital PLL Simulator</h1>
+  <div class="controls">
+    <label for="gain">Loop Gain:</label>
+    <input type="range" id="gain" min="1" max="100" value="50">
+    <label for="noise">Noise Level:</label>
+    <input type="range" id="noise" min="0" max="10" value="1">
+    <label for="delay">Delay:</label>
+    <input type="range" id="delay" min="0" max="50" value="10">
+    <label for="jitter">Jitter:</label>
+    <input type="range" id="jitter" min="0" max="20" value="5">
+  </div>
+  <canvas id="pllCanvas"></canvas>
+  <div class="cdr">
+    <h2>Clock and Data Recovery</h2>
+    <p>Simulated Binary Data:</p>
+    <div id="binaryData"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
